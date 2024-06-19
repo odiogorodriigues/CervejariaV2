@@ -23,7 +23,7 @@ h1{
 }
 #option{
     background-color: #CA7900;
-    width: 60%;
+    width: 80%;
     height: 230px;
     border-radius: 40px;
     display: flex;
@@ -45,7 +45,7 @@ button, #botao{
     border: 5px solid #F5F5F5;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
     border-radius: 14px;
-    width: 140px;
+    width: 25%;
     height: 50px;
     font-family: 'Raleway';
     color: white;
@@ -114,18 +114,18 @@ section{
     justify-content: center;
     align-items: center;
     margin-top: 50px;
+    gap: 40px;
 }
 .card{
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-left: 50px;
 }
 h3{
     font-family: 'Raleway';
     font-style: normal;
     font-weight: 400;
-    font-size: 24px;
+    font-size: 20px;
     line-height: 28px;
     text-align: center;
     color: #F5F5F5;
@@ -136,4 +136,53 @@ h3{
 .menor18{
     visibility: hidden;
     display: none;
+}
+
+@media screen and (max-width: 610px) {
+    button, #botao {
+        width: 20%;
+    }
+}
+
+@media screen and (max-width: 455px) {
+    button, #botao {
+        width: 20%;
+    }
+    #option {
+        width: 80%;
+        position: relative;
+    }
+    #cerveja {
+        position: absolute;
+        top: 60px;
+    }
+    #resposta {
+        line-height: 30px;
+        font-size: 28px;
+    }
+
+    section {
+        gap: 20px;
+    }
+}
+
+@media screen and (max-width: 345px) {
+    button, #botao {
+        width: 25%;
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+    #option {
+        width: 90%;
+    }
+    #resposta {
+        font-size: 25px;
+    }
+    section {
+        gap: 10px;
+    }
+
+    h3 {
+        font-size: 18px;
+    }
 }

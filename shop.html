@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cervejaria</title>
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="css/styles.css">
     <script>
         let url = document.location.search
         const parametros = new URLSearchParams(url);
@@ -16,37 +16,31 @@
     <nav>
         <div class="container" id="navegacao">
                <ul>
-                    <li><a href="">A cervejaria</a></li>
-                    <li><a href="">Nossas Cervejas</a></li>
-                    <li><a href="">Delivery</a></li>
-                </ul>
-                <ul id="rigth">
-                    <li><a href="">Meu Carrinho</a></li>
-                    <img id="car" src="carrinho.svg">
-                </ul>           
+                    <li><a href="index.html">A cervejaria</a></li>
+                </ul>      
         </div>
     </nav>    
    <main>
         <div class="container" id="option">
-            <img id="cerveja" src="cerveja.svg">
+            <img id="cerveja" src="images/cerveja.svg">
             <p id="resposta">Olá! Gostaria de te dar boas vindas à Cervejaria do Pericles. <br>Escolha a bebida que mais te agrada:</p>
         </div>
     </main>
     <section>
         <div class="card" id="card2">
-            <img src="vinho.png" width="86" onclick="vinho()">
+            <img src="images/vinho.png" width="86" onclick="vinho()" style="margin-bottom: 0.5px;">
             <h3>Vinho Tinto</h3>
             <h3>R$ 80,00</h3>
         </div>
 
-        <div class="card" id="card1" onclick="cerveja()">
-            <img src="heineken.svg">
+        <div class="card" id="card1" onclick="cerveja()" style="margin-bottom: 3px;">
+            <img src="images/heineken.svg">
             <h3>Cerveja Heineken</h3>
             <h3>R$ 20,00</h3>
         </div>
 
         <div class="card">
-            <img src="refrigerante.svg" onclick="refrigerante()">
+            <img src="images/refrigerante.svg" onclick="refrigerante()">
             <h3>Refrigerante Guaraná</h3>
             <h3>R$ 10,00</h3>
         </div>
